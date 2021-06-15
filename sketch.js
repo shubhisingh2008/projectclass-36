@@ -6,8 +6,8 @@ var feedtime , lastfeedTime;
 var foodobj;
 
 function preload(){
-dogimage = loadImage("images/dogImg.png")
-dogimage1 = loadImage("images/dogImg1.png")
+dogimage = loadImage("dogImg.png")
+dogimage1 = loadImage("dogImg1.png")
 }
 
 function setup() {
