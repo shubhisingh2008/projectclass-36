@@ -13,6 +13,7 @@ dogimage1 = loadImage("dogImg1.png")
 function setup() {
   database = firebase.database();
   createCanvas(500, 500);
+  foodobj  = new Food();
   
   dog  = createSprite(250,300,150,150);
   dog.addImage(dogimage);
@@ -21,7 +22,7 @@ function setup() {
   foodStock = database.ref("food")
   foodStock.on("value",readStock)
 
-  foodobj  = new Food();
+  
   feed = createButton("feedthedog");
   feed.position(500,95);
   feed.mousePressed("feedDog")
